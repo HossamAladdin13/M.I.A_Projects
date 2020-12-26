@@ -68,21 +68,21 @@ void initial()
 void test() {
   read_degree();
 
-  // rotate wrist 180deg
+  // rotate wrist 180deg CW
   for(wrist_degree; wrist_degree < MAX_DEGREE; wrist_degree++)
   {
     wrist.write(wrist_degree);  
     delay(15);
   }
   
-  // rotate elbow 180deg
+  // rotate elbow 180deg CW
   for(elbow_degree; elbow_degree < MAX_DEGREE; elbow_degree++)
   {
     elbow.write(elbow_degree);
     delay(15);
   }
 
-  //rotate base 90deg
+  //rotate base 90deg CWW
   for(base_degree; base_degree > MIN_DEGREE; base_degree--)
   {
     base.write(base_degree);
